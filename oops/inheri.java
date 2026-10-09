@@ -22,7 +22,7 @@ class Bike extends Vehicle {
 }
 
 // Main Class
-public class inheritance {
+public class inheri {
 
     public static void main(String[] args) {
 
