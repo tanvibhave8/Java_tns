@@ -1,4 +1,4 @@
-package oops.inheritance;
+package inheritance;
 
 
 //Simple Inheritance
