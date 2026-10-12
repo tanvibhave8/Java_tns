@@ -1,4 +1,4 @@
-package Basics;
+package Lectures.Basics;
 import java.util.Scanner;
 
 public class LeapYear {

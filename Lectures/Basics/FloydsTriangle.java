@@ -1,4 +1,4 @@
-package Basics;
+package Lectures.Basics;
 public class FloydsTriangle {
     public static void main(String[] args) {
         int num = 1;

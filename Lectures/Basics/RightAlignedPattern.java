@@ -1,4 +1,4 @@
-package Basics;
+package Lectures.Basics;
 
 public class RightAlignedPattern {
     public static void main(String[] args) {

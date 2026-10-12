@@ -1,4 +1,4 @@
-package oops;
+package Lectures.oops;
 
 class Car{
     String color;

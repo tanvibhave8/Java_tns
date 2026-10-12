@@ -1,4 +1,4 @@
-package oops;
+package Lectures.oops;
 
 // Abstract Parent Class
 abstract class PaymentGateway {

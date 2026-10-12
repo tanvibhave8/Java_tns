@@ -1,4 +1,4 @@
-package Basics;
+package Lectures.Basics;
 
 public class ZeroOnePattern {
     public static void main(String[] args) {

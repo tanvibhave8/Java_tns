@@ -1,4 +1,4 @@
-package oops;
+package Lectures.oops;
 // Parent Class (Superclass)
 class Vehicle {
 
