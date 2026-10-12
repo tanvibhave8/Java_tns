@@ -16,13 +16,24 @@ package Lectures;
 // }
 // }
 
-class App{
-    public static void main(String[] args) {
-        Battery phbattery=new Battery(250);
-        Camera phcam=new Camera(450);
+// class App{
+//     public static void main(String[] args) {
+//         Battery phbattery=new Battery(250);
+//         Camera phcam=new Camera(450);
 
-        Phone motorola=new Phone("Pixel", phbattery,phcam);
+//         Phone motorola=new Phone("Pixel", phbattery,phcam);
 
-        motorola.snapPicture();
-    }
+//         motorola.snapPicture();
+//     }
+// }
+
+/**
+ * App
+ */
+class App {
+public static void main(String[] args) {
+    Student s=new Student("Tanvi");
+    s.stucol();
+}
+     
 }

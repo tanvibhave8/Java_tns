@@ -58,41 +58,52 @@ package Lectures;
 
 
 
-class Battery{
-    int capacityMaH;
-    Battery(int capacityMaH){
-        this.capacityMaH=capacityMaH;
-    }
+// class Battery{
+//     int capacityMaH;
+//     Battery(int capacityMaH){
+//         this.capacityMaH=capacityMaH;
+//     }
 
-    void drain(){
-        System.out.println("Battery Used. \n Capacity remaining: " + (capacityMaH-100) + capacityMaH);
-    }
-}
+//     void drain(){
+//         System.out.println("Battery Used. \n Capacity remaining: " + (capacityMaH-100) + capacityMaH);
+//     }
+// }
 
-class Camera{
-    int pix;
+// class Camera{
+//     int pix;
 
-    Camera(int pix){
-        this.pix=pix;
-    }
-    void takePhoto(){
-        System.out.println("Click....Captured a photo with " + pix + " sensor.");
-    }
-}
+//     Camera(int pix){
+//         this.pix=pix;
+//     }
+//     void takePhoto(){
+//         System.out.println("Click....Captured a photo with " + pix + " sensor.");
+//     }
+// }
 
-class Phone{
-    String brand;
-    Battery battery;
-    Camera camera;
+// class Phone{
+//     String brand;
+//     Battery battery;
+//     Camera camera;
 
-    Phone(String brand, Battery battery, Camera camera){
-        this.brand=brand;
-        this.battery=battery;
-        this.camera=camera;
+//     Phone(String brand, Battery battery, Camera camera){
+//         this.brand=brand;
+//         this.battery=battery;
+//         this.camera=camera;
+//     }
+//     void snapPicture(){
+//         System.out.println("[ " + brand + " ]" + "is active." );
+//         camera.takePhoto();
+//         battery.drain();
+//     }
+// }
+
+class Student{
+    String name;
+    static String collegeName="Watumull Institute";
+    Student(String name){
+        this.name=name;
     }
-    void snapPicture(){
-        System.out.println("[ " + brand + " ]" + "is active." );
-        camera.takePhoto();
-        battery.drain();
+    void stucol(){
+        System.out.println(name + " studies in " + collegeName);
     }
 }
