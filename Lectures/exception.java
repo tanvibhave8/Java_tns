@@ -1,5 +1,5 @@
 package Lectures;
-
+import java.util.*;
 public class exception {
     public static void main(String[] args) {
 
@@ -14,18 +14,41 @@ public class exception {
         //     System.out.println("You cannot divide by 0.");
         //     System.out.println("The error type was :" + e.getMessage());
         //  }
+//------------------------------------------------------------------------------------
+    // try {
+    //     // int res=10/0;
+    //     // System.out.println(res);
+    //     int[] numbers={10,20,30};
+    //     System.out.println(numbers[5]);
+    //     } catch (ArrayIndexOutOfBoundsException e){
+    //         System.out.println("Invalid array index.");
+    //     }catch(ArithmeticException e){
+    //         System.out.println("Cannot be divided by 0.");
+    //     }
 
-    try {
-        // int res=10/0;
-        // System.out.println(res);
-        int[] numbers={10,20,30};
-        System.out.println(numbers[5]);
-        } catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Invalid array index.");
-        }catch(ArithmeticException e){
-            System.out.println("Cannot be divided by 0.");
-        }
-    }
+//------------------------------------------------------------------------------
+    //finally:closing statement.
+
+    // try{
+    //     int res=10/5;
+    // }catch(ArithmeticException e){
+    //     System.out.println("Cannot divide by 0.");
+    // }finally{
+    //     System.out.println("Finally block executed");
+    // } 
+
+//--------------------------------throw-----------------------------------
+System.out.print("Enter age : ");  
+Scanner sc=new Scanner(System.in);
+
+   int age =sc.nextInt();
+   if(age<0){
+    throw new IllegalArgumentException(
+        "Age cannot be negative."
+    );
+   }
+   System.out.println("Age: "+age);
+}
 }
 
 /* 
