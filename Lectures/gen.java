@@ -40,6 +40,7 @@ package Lectures;
 */
 
 // Multi type parameters
+
 class Pair<K, V> {
     private K key;
     private V value;
