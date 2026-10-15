@@ -1,5 +1,8 @@
 package Lectures;
 
+import java.util.Arrays;
+import java.util.List;
+
 // class Box<T> {
 // 	private T item;
 // 	void set(T item)
@@ -71,20 +74,42 @@ package Lectures;
 // }
 
 // Generic method
-class Util{
-    static <T> void printTwice(T value){
-        System.out.println(value);
-        System.out.println(value);
-    }
+// class Util{
+//     static <T> void printTwice(T value){
+//         System.out.println(value);
+//         System.out.println(value);
+//     }
 
-    static <T> T firstOf(T a, T b){
-        return b;
-    }
-}
+//     static <T> T firstOf(T a, T b){
+//         return b;
+//     }
+// }
+
+// class gen{
+//     public static void main(String[] args){
+//         Util.printTwice(100);
+//         System.out.println(Util.firstOf("Hi", "Hello"));
+//     }
+// }
 
 class gen{
-    public static void main(String[] args){
-        Util.printTwice(100);
-        System.out.println(Util.firstOf("Hi", "Hello"));
+    public static void printList(List<?> list){
+       for(Object o : list){
+        System.out.println(o);
+       }
     }
+public static void main(String[] args) {
+    List<String> names= Arrays.asList("Anish", "Varun","Bhumi");
+    List<Integer> nums =Arrays.asList(100,99,98);
+    List<Double>prices=Arrays.asList(99.6,99.5,90.7);
+
+    System.out.println("Name : ");
+    printList(names);
+
+    System.out.println("\nNumbers :");
+    printList(nums);
+
+    System.out.println("\nPrices :");
+    printList(prices);
+}    
 }
