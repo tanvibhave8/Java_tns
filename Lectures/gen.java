@@ -92,24 +92,48 @@ import java.util.List;
 //     }
 // }
 
-class gen{
-    public static void printList(List<?> list){
-       for(Object o : list){
-        System.out.println(o);
-       }
-    }
-public static void main(String[] args) {
-    List<String> names= Arrays.asList("Anish", "Varun","Bhumi");
-    List<Integer> nums =Arrays.asList(100,99,98);
-    List<Double>prices=Arrays.asList(99.6,99.5,90.7);
+// class gen{
+//     public static void printList(List<?> list){
+//        for(Object o : list){
+//         System.out.println(o);
+//        }
+//     }
+// public static void main(String[] args) {
+//     List<String> names= Arrays.asList("Anish", "Varun","Bhumi");
+//     List<Integer> nums =Arrays.asList(100,99,98);
+//     List<Double>prices=Arrays.asList(99.6,99.5,90.7);
 
-    System.out.println("Name : ");
-    printList(names);
+//     System.out.println("Name : ");
+//     printList(names);
 
-    System.out.println("\nNumbers :");
-    printList(nums);
+//     System.out.println("\nNumbers :");
+//     printList(nums);
 
-    System.out.println("\nPrices :");
-    printList(prices);
-}    
+//     System.out.println("\nPrices :");
+//     printList(prices);
+// }    
+// }
+
+
+public class gen{
+
+	static double sum(List<? extends Number>list)
+	{
+		double total = 0;
+		for(Number n : list)
+		{
+			total += n.doubleValue();
+		}
+		return total;
+	}
+	public static void main(String[] args) {
+		List<Integer> integers= List.of(1,2,3);
+		List<Float> floats= List.of(1.6f, 2.5f, 3.7f);
+		List<Double> decimals= List.of(1.5,2.8,3.9);
+		
+		System.out.println(integers);
+		System.out.println(floats);
+		System.out.println(decimals);
+	}
+
 }
