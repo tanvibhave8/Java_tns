@@ -41,31 +41,50 @@ package Lectures;
 
 // Multi type parameters
 
-class Pair<K, V> {
-    private K key;
-    private V value;
+// class Pair<K, V> {
+//     private K key;
+//     private V value;
 
-    public Pair(K key, V value) {
-        this.key = key;
-        this.value = value;
+//     public Pair(K key, V value) {
+//         this.key = key;
+//         this.value = value;
+//     }
+
+//     public K getKey() {
+//         return key;
+//     }
+
+//     public V getValue() {
+//         return value;
+//     }
+// }
+
+// class gen{
+//     public static void main(String[] args){
+//         Pair<String, Integer> p = new Pair<>("Age", 25);
+
+//         String k = p.getKey();
+//         Integer v = p.getValue();
+
+//         System.err.println(k + ":" + v);
+//     }
+// }
+
+// Generic method
+class Util{
+    static <T> void printTwice(T value){
+        System.out.println(value);
+        System.out.println(value);
     }
 
-    public K getKey() {
-        return key;
-    }
-
-    public V getValue() {
-        return value;
+    static <T> T firstOf(T a, T b){
+        return b;
     }
 }
 
 class gen{
     public static void main(String[] args){
-        Pair<String, Integer> p = new Pair<>("Age", 25);
-
-        String k = p.getKey();
-        Integer v = p.getValue();
-
-        System.err.println(k + ":" + v);
+        Util.printTwice(100);
+        System.out.println(Util.firstOf("Hi", "Hello"));
     }
 }
