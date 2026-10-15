@@ -97,13 +97,16 @@ package Lectures;
 //     }
 // }
 
-class Student{
-    String name;
-    static String collegeName="Watumull Institute";
-    Student(String name){
-        this.name=name;
-    }
-    void stucol(){
-        System.out.println(name + " studies in " + collegeName);
-    }
-}
+// class Student{
+//     String name;
+//     static String collegeName="Watumull Institute";
+//     Student(String name){
+//         this.name=name;
+//     }
+//     void stucol(){
+//         System.out.println(name + " studies in " + collegeName);
+//     }
+// }
+
+
+

@@ -1,7 +1,9 @@
 package Lectures;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 public class exception {
-    public static void main(String[] args) {
+ public static void main(String[] args) {
 
         // //Arithematic Exception
         // int a =10/0;
@@ -38,18 +40,50 @@ public class exception {
     // } 
 
 //--------------------------------throw-----------------------------------
-System.out.print("Enter age : ");  
-Scanner sc=new Scanner(System.in);
+// System.out.print("Enter age : ");  
+// Scanner sc=new Scanner(System.in);
 
-   int age =sc.nextInt();
-   if(age<0){
-    throw new IllegalArgumentException(
-        "Age cannot be negative."
-    );
-   }
-   System.out.println("Age: "+age);
+//    int age =sc.nextInt();
+//    if(age<0){
+//     throw new IllegalArgumentException(
+//         "Age cannot be negative."
+//     );
+//    }
+//    System.out.println("Age: "+age);
+
+//-----------------------------throws------------------------------
+// static void readFile() throws IOException{
+// FileReader file= new FileReader("data.txt");
+// System.out.println("File Opened.");
+// }
+// public static void main(String[] args) {
+//     try{
+//         readFile();
+//     }catch(IOException e){
+//         System.out.println("Could not find the file.");
+//     }
+// }
+
+//------------------------Question------------------------------------------
+
+int balance=5000;
+int withdrawal=7000;
+try{
+    if(withdrawal > balance){
+        throw new IllegalArgumentException(
+            "Insufficient balance."
+        );
+    }
+    balance -= withdrawal;
+    System.out.println("Withdrawal was successfull.");
+    System.out.println("Remaining balance: "+ balance);
+}catch (IllegalArgumentException e){
+    System.out.println(e.getMessage());
+}
+System.out.println("Program Completed.");
 }
 }
+//}
 
 /* 
 NullPointerException
