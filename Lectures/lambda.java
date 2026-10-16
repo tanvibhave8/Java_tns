@@ -24,7 +24,12 @@ public class lambda {
     // Consumer <String> pr = message -> System.out.println(message);
     // pr.accept("Hello I love Cricket.");
 
-    Supplier<String> message = () ->"Welcome to the world!";
-    System.out.println(message.get());
+    // Supplier<String> message = () ->"Welcome to the world!";
+    // System.out.println(message.get());
+
+    Consumer <String> smsNotifier = mobNo ->{
+        System.out.println("Sending the OTP to the ph no. :" + mobNo);
+    };
+    smsNotifier.accept("+91 1234567890");
 }
 }
