@@ -21,8 +21,10 @@ public class lambda {
     // System.out.println(getLength.apply("Java"));
     // System.out.println(getLength.apply("John"));
     
-    Consumer <String> pr = message -> System.out.println(message);
-    pr.accept("Hello I love Cricket.");
+    // Consumer <String> pr = message -> System.out.println(message);
+    // pr.accept("Hello I love Cricket.");
 
+    Supplier<String> message = () ->"Welcome to the world!";
+    System.out.println(message.get());
 }
 }
