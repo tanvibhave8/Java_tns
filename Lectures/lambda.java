@@ -17,9 +17,12 @@ public class lambda {
     //    System.out.println(isAdult.test(15));
 
 
-    Function<String,Integer>getLength = name -> name.length();
-    System.out.println(getLength.apply("Java"));
-    System.out.println(getLength.apply("John"));    
- }
-}
+    // Function<String,Integer>getLength = name -> name.length();
+    // System.out.println(getLength.apply("Java"));
+    // System.out.println(getLength.apply("John"));
+    
+    Consumer <String> pr = message -> System.out.println(message);
+    pr.accept("Hello I love Cricket.");
 
+}
+}
