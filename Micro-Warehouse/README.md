@@ -27,6 +27,3 @@ Micro-Warehouse Inventory & Fulfillment Hub is a Java Spring Boot application de
 ```bash
 mvn spring-boot:run
 ```
-
-## Developer
-**Tanvi Bhave**
