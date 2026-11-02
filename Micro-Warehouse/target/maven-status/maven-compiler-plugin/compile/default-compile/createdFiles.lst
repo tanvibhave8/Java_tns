@@ -1,0 +1,15 @@
+com\microwarehouse\repository\OrderRepository.class
+com\microwarehouse\ui\ConsoleApplication.class
+com\microwarehouse\entity\Order.class
+com\microwarehouse\service\ReportService.class
+com\microwarehouse\repository\ReportRepository.class
+com\microwarehouse\entity\Product.class
+com\microwarehouse\ui\AdminMenu.class
+com\microwarehouse\service\OrderService.class
+com\microwarehouse\repository\mapper\ProductRowMapper.class
+com\microwarehouse\service\ProductService.class
+com\microwarehouse\MicroWarehouseApplication.class
+com\microwarehouse\repository\ProductRepository.class
+com\microwarehouse\config\DatabaseConfig.class
+com\microwarehouse\entity\OrderItem.class
+com\microwarehouse\ui\CustomerMenu.class

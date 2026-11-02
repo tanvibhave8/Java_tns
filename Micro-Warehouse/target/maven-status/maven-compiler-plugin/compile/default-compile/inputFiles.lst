@@ -1,0 +1,15 @@
+F:\micro-warehouse\src\main\java\com\microwarehouse\config\DatabaseConfig.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\entity\Order.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\entity\OrderItem.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\entity\Product.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\MicroWarehouseApplication.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\repository\mapper\ProductRowMapper.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\repository\OrderRepository.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\repository\ProductRepository.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\repository\ReportRepository.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\service\OrderService.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\service\ProductService.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\service\ReportService.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\ui\AdminMenu.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\ui\ConsoleApplication.java
+F:\micro-warehouse\src\main\java\com\microwarehouse\ui\CustomerMenu.java
